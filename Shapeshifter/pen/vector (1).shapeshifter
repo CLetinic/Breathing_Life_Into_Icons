@@ -1,0 +1,74 @@
+{
+  "version": 1,
+  "layers": {
+    "vectorLayer": {
+      "id": "6470",
+      "name": "vector",
+      "type": "vector",
+      "width": 24,
+      "height": 24,
+      "children": [
+        {
+          "id": "6471",
+          "name": "group",
+          "type": "group",
+          "scaleX": 0.5,
+          "scaleY": 0.5,
+          "pivotX": 12,
+          "pivotY": 12,
+          "children": [
+            {
+              "id": "6468",
+              "name": "path",
+              "type": "path",
+              "pathData": "M 3 17.25 L 3 21 L 6.75 21 L 17.81 9.94 L 14.06 6.19 L 3 17.25 Z M 20.71 7.04 C 21.1 6.65 21.1 6.02 20.71 5.63 L 18.37 3.29 C 17.98 2.9 17.35 2.9 16.96 3.29 L 15.13 5.12 L 18.88 8.87 L 20.71 7.04 Z",
+              "fillColor": "#000",
+              "strokeWidth": 1
+            }
+          ]
+        },
+        {
+          "id": "6481",
+          "name": "path_1",
+          "type": "path",
+          "pathData": "M 18 17 L 7.5 17 Z",
+          "fillColor": "#000000",
+          "strokeColor": "#000000",
+          "strokeWidth": 0.25
+        }
+      ]
+    },
+    "hiddenLayerIds": []
+  },
+  "timeline": {
+    "animation": {
+      "id": "6427",
+      "name": "anim",
+      "duration": 500,
+      "blocks": [
+        {
+          "id": "6923",
+          "layerId": "6471",
+          "propertyName": "translateX",
+          "startTime": 122,
+          "endTime": 222,
+          "interpolator": "LINEAR",
+          "type": "number",
+          "fromValue": 10.5,
+          "toValue": 0
+        },
+        {
+          "id": "6925",
+          "layerId": "6481",
+          "propertyName": "trimPathStart",
+          "startTime": 125,
+          "endTime": 315,
+          "interpolator": "LINEAR",
+          "type": "number",
+          "fromValue": 1,
+          "toValue": 0
+        }
+      ]
+    }
+  }
+}

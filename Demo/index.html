@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="./style.css">
+	<script type="text/javascript" src="./javascript/modal.js"></script>
+</head>
+<body>
+	<popup-modal id="modal">
+		<div id="modalHeader" slot="header"></div>
+		<div id="modalBody" slot="body"></div>
+		<div id="modalFooter" slot="footer"></div>
+	</popup-modal>
+	<button onclick="showModal()">click</button>
+
+	<script type="text/javascript">
+		function showModal() {
+
+				document.getElementById('modalHeader').innerHTML = `
+						<h1>Modify Account</h1>
+						<button class="modal-close" onclick="document.querySelector('#modal')._hideModal()">X</button>
+					`;
+				document.getElementById('modalBody').innerHTML = `
+							<p>Make changes to your account</p>
+							<button class="modal-button" id="modifyselectusernamebtn" type="button"  onclick="document.querySelector('#modal')._hideModal(); modifyPreferencesUsernameModal();">Username</button>
+							<br/>
+							<button class="modal-button" id="modifyselectemailbtn" type="button" onclick="document.querySelector('#modal')._hideModal(); modifyPreferencesEmailModal();">Email</button>
+							<br/>
+							<button class="modal-button" id="modifyselectpasswordbtn" type="button" onclick="document.querySelector('#modal')._hideModal(); modifyPreferencesPasswordModal()">Password</button>
+							<br/>
+							<button class="modal-button" id="modifyselectnotificationsbtn" type="button" onclick="document.querySelector('#modal')._hideModal(); modifyPreferencesNotificationsModal();">Notifications</button>
+					`;
+				document.getElementById('modalFooter').innerHTML = `<br/>`;
+
+				document.querySelector('#modal')._showModal();
+
+			}
+	</script>
+</body>
+</html>
