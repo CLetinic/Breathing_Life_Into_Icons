@@ -3,16 +3,32 @@
 	<head>
 		<title></title>
 		<link rel="stylesheet" type="text/css" href="./style.css">
+		<link rel="stylesheet" type="text/css" href="sprite_30fps.css"/>
 		<script type="text/javascript" src="./javascript/modal.js"></script>
 	</head>
 	<body>
 		<nav id="nav">
-			<div>
-				<button></button>
+			<div id="navmenu">
+			</div>
+			<div id="navtab">
+				<button id="navtabbutton" class="ripple"><div class="shapeshifter" style="background-image: url(sprite_30fps.svg)" onclick="switchMenu(this)"></div></button>
 			</div>
 		</nav>
 		<main>
 
 		</main>
 	</body>
+	<script>
+		function switchMenu(icon) {
+	  
+		  if (!icon.classList.contains('play') && !icon.classList.contains('reverse'))
+			icon.classList.add('play');
+		  else
+		  {
+			icon.classList.toggle('play');
+			icon.classList.toggle('reverse');
+		  }    
+	  
+		}
+	  </script>
 </html>

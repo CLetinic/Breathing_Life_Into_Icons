@@ -11,21 +11,22 @@
 }
 
 #navtab {
-    grid-area: navtab;
+	grid-area: navtab;
+	
 }
 
 #navmenu {
-    grid-area: navmenu;
+	grid-area: navmenu;
+	background: var(--primary);
 }
 
 nav {
     grid-area: nav;
-    background: var(--primary);
 
     display: grid;
-	grid-template-columns: 3fr 1fr;
+	grid-template-columns: 1fr calc(40px);
 	grid-template-areas:
-		"navtab navmenu";
+		"navmenu navtab";
 }
 
 main {
@@ -41,3 +42,14 @@ body {
 	grid-template-areas:
 		"nav content";
 }
+
+#navtabbutton {
+	width: 2.5rem;
+	height: 2.5rem;
+	background-color: var(--primary);
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+
