@@ -1,6 +1,43 @@
-body {
-    background: #43d8c9;
+
+:root {
+	--primary: #43d8c9;
+	--secondary: #f7f7f7;
+    --tertiary: #95389e;
+    --quaternary: #100303;
+	--success: #28a745;
+	--info: #17a2b8;
+	--warning: #ffc107;
+	--danger: #c70039;	
 }
-/* #f7f7f7 */
-/* #95389e */
-/* #100303 */
+
+#navtab {
+    grid-area: navtab;
+}
+
+#navmenu {
+    grid-area: navmenu;
+}
+
+nav {
+    grid-area: nav;
+    background: var(--primary);
+
+    display: grid;
+	grid-template-columns: 3fr 1fr;
+	grid-template-areas:
+		"navtab navmenu";
+}
+
+main {
+	grid-area: content;
+}
+
+body {
+    background: var(--secondary);
+	height: 100vh;
+    display: grid;
+    margin: 0;
+	grid-template-columns: 1fr 3fr;
+	grid-template-areas:
+		"nav content";
+}
