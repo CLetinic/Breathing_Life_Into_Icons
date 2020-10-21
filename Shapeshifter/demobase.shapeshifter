@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "layers": {
+    "vectorLayer": {
+      "id": "58",
+      "name": "vector",
+      "type": "vector",
+      "width": 24,
+      "height": 24,
+      "children": [
+        {
+          "id": "63",
+          "name": "line_top",
+          "type": "path",
+          "pathData": "M 4 7 L 20 7 Z",
+          "strokeColor": "#000000",
+          "strokeWidth": 2
+        },
+        {
+          "id": "61",
+          "name": "line_middle",
+          "type": "path",
+          "pathData": "M 4 12 L 20 12 Z",
+          "strokeColor": "#000000",
+          "strokeWidth": 2
+        },
+        {
+          "id": "65",
+          "name": "line_bottom",
+          "type": "path",
+          "pathData": "M 4 17 L 20 17 Z",
+          "strokeColor": "#000000",
+          "strokeWidth": 2
+        }
+      ]
+    },
+    "hiddenLayerIds": []
+  },
+  "timeline": {
+    "animation": {
+      "id": "66",
+      "name": "anim",
+      "duration": 300,
+      "blocks": []
+    }
+  }
+}

@@ -9,13 +9,6 @@
 
 	</head>
 	<body>
-		<!-- <nav id="nav" class="sidenav">
-			<div id="navmenu">
-			</div>
-			<div id="navtab">
-				<button id="navtabbutton"><div class="shapeshifter" style="background-image: url(sprite_30fps.svg)" onclick="toggleNav(); switchMenu(this);"></div></button>
-			</div>
-		</nav> -->
 		<nav id="nav" class="sidenav">
 			<div id="navmenu">
 				<div class="sidebar" data-color="primary">
@@ -47,7 +40,7 @@
 				</div>
 			</div>
 			<div id="navtab">
-				<button id="navtabbutton"><div class="shapeshifter" style="background-image: url(menu.svg)" onclick="toggleNav();"></div></button>
+				<button id="navtabbutton"><div class="navtabicon shapeshifter" style="background-image: url(menu.svg)" onclick="toggleNav();"></div></button>
 				<!-- <button id="navtabbutton"><div class="shapeshifter" style="background-image: url(sprite_30fps.svg)" onclick="toggleNav(); switchMenu(this);"></div></button> -->
 			</div>
 		</nav>
@@ -66,13 +59,13 @@
 
 		function switchMenu(icon) {
 	  
-		  if (!icon.classList.contains('play') && !icon.classList.contains('reverse'))
-			icon.classList.add('play');
-		  else
-		  {
-			icon.classList.toggle('play');
-			icon.classList.toggle('reverse');
-		  }    
+		//   if (!icon.classList.contains('play') && !icon.classList.contains('reverse'))
+		// 	icon.classList.add('play');
+		//   else
+		//   {
+		// 	icon.classList.toggle('play');
+		// 	icon.classList.toggle('reverse');
+		//   }    
 	  
 		}
 	  </script>
