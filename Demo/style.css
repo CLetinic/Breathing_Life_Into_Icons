@@ -1,6 +1,6 @@
 
 :root {
-	--primary: #43d8c9;
+	--primary: #c70039;/*#43d8c9;*/
 	--secondary: #f7f7f7;
     --tertiary: #95389e;
 	--quaternary: #100303;
@@ -252,3 +252,47 @@ body {
   #main {
 	transition: margin-left .5s;
   }
+
+/* 
+______________________
+         SVG        
+______________________ 
+*/
+
+  @keyframes toX {
+	0% {
+	  background-position: 0px 0px;
+	}
+	100% {
+	  background-position: -505px 0px;
+	}
+  }
+  
+  @keyframes toMenu {
+	100% {
+	  background-position: 0px 0px;
+	}
+	0% {
+	  background-position: -505px 0px;
+	}
+  }
+  
+  
+  .shapeshifter {
+	animation-duration: 700ms;
+	animation-timing-function: steps(21);
+	width: 24px;
+	height: 24px;
+	background-repeat: no-repeat;
+	fill: white;
+  }
+  .shapeshifter.play {
+	animation-name: toX;
+	background-position: -505px 0px;
+  }
+  
+  .shapeshifter.reverse {
+	animation-name: toMenu;
+  }
+  
+  
