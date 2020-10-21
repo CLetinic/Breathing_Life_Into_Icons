@@ -7,18 +7,29 @@
 		<script type="text/javascript" src="./javascript/modal.js"></script>
 	</head>
 	<body>
-		<nav id="nav">
+		<nav id="nav" class="sidenav">
 			<div id="navmenu">
+				<!-- <a href="#">About</a>
+				<a href="#">Services</a>
+				<a href="#">Clients</a>
+				<a href="#">Contact</a> -->
 			</div>
 			<div id="navtab">
-				<button id="navtabbutton" class="ripple"><div class="shapeshifter" style="background-image: url(sprite_30fps.svg)" onclick="switchMenu(this)"></div></button>
+				<button id="navtabbutton"><div class="shapeshifter" style="background-image: url(sprite_30fps.svg)" onclick="toggleNav(); switchMenu(this);"></div></button>
 			</div>
 		</nav>
-		<main>
-
-		</main>
+		  
+		<main id="main">
+			
+		</main>		  
 	</body>
 	<script>
+		function toggleNav()
+		{
+			document.getElementById("main").style.marginLeft == "300px" ? document.getElementById("main").style.marginLeft= "0" : document.getElementById("main").style.marginLeft = "300px";
+			document.getElementById("nav").style.width == "300px" ? document.getElementById("nav").style.width = "40px" : document.getElementById("nav").style.width = "300px";
+		}
+
 		function switchMenu(icon) {
 	  
 		  if (!icon.classList.contains('play') && !icon.classList.contains('reverse'))
